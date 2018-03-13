@@ -1,5 +1,5 @@
 resource "aws_instance" "example" {
-  count = 5
+  count = 2
   ami = "ami-8ee056f3"
   instance_type = "t2.small"
   subnet_id =  "${aws_subnet.example.id}"
