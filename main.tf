@@ -1,5 +1,6 @@
 output "aws_keys" {
   value = "${var.access_key_aws}"
+  sensitive = true
 }
 
 output "aws_secret" {
