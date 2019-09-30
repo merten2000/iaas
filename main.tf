@@ -2,6 +2,10 @@ output "aws_keys" {
   value = "${var.access_key_aws}"
 }
 
+output "aws_secret" {
+  value = "${var.secret_key_aws}"
+}
+
 module "vpc" {
   source = "./vpc"
 }
