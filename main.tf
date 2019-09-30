@@ -6,7 +6,7 @@ module "vpc" {
 
 module "testserver" {
   source = "./testserver"
-  servername = "test001"
+  servername = "test002"
   count = 1
   subnet = "${module.vpc.subnet}"
 }
